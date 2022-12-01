@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image7png" sizes="" href="img/iconos/logo.png">
+        <meta name="description" content="Curso de HTML - JS - CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!--CSS del Proyecto-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Qejas</title>
+    </head>
+<body>
+    <header class="cabecera">
+        
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <section class="container-fluid bg-dark" >
+            <a class="navbar-brand m-0 p-0" href="#">
+                <img src="img/logo/logo-oct.png" alt="win internet" class="logo-win">
+            </a>
+          <a class="navbar-brand" href="Inicio.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <section class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+              <a class="nav-link" href="hogar.html">Hogar</a>
+              <a class="nav-link" href="region.html">Region</a>
+              <a class="nav-link" href="formadepago.html">formas de pago</a>
+              <a class="nav-link" href="reclamos.html">reclamos</a>
+            </section>
+          </section>
+        </section>
+      </nav>
+
+      <!----------------------------------------------MAIN---------------------------------------------------------------->
+    <main class="container bg-light border border-3 border-success">
+        <section class="container">
+            <section class="row justify-content-center">
+                
+
+                <section id="service_types_wraper" class="step_wraper col-md-10" style="display: none;">
+                    <h3 class="text-center text-orange text-medium bold mb-4">SELECCIONA EL TEMA ASOCIADO Y REGÍSTRALO</h3>
+                    <section class="row d-flex d-xs-block mb-5">
+                    </section>
+                </section>
+
+                <section id="form_wraper"  class="step_wraper col-md-8">
+                    <h2 class="text-center mb-4">COMPLETE EL FORMULARIO DE QUEJAS</h2>
+                    <form class="row" id="relamacionesForm">
+
+                        <section class="col-12">
+                            <h3 class="bold text-normal mb-3">Datos del usuario</h3>
+                        </section>
+
+                        <section  class="hidden-element data-type-reclamo data-type-queja data-type-apelacion   col-md-6">
+                            <label>Tipo de servicio</label>
+                            <select class="form-control" name="user_type">
+                                <option value="" selected="" disabled="">Seleccione</option>
+                                <option value="residencial">Residencial</option>
+                                <option value="empresa">Empresa</option>
+                            </select>
+                        </section>
+                        <section  class="col-6 hidden-element data-type-reclamo data-type-queja data-type-apelacion"></section>
+
+                        <section class="  col-md-6">
+                            <label>Tipo de documento de identidad</label>
+                            <select class="form-control" name="document_type">
+                                <option value="" selected="" disabled="">Seleccione</option>
+                                <option value="ce">Carné de extranjería (CE)</option>
+                                <option value="dni">Documento Nacional de Identidad (DNI)</option>
+                                <option value="ruc">Registro Único de Contribuyentes (RUC)</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                        </section>
+
+                        <section class="  col-md-6">
+                            <label for="dni">N° del documento de Identidad</label>
+                            <input type="text" class="form-control" name="document_number" maxlength="15">
+                        </section>
+
+                        <section class="  col-md-6">
+                            <label>Departamento</label>
+                            <select class="form-control" id="departments" name="departmento">
+                                <option value="">Seleccione</option>
+                                                                    <option value="2">Ancash</option>
+                                                                    <option value="7">Callao</option>
+                                                                    <option value="13">La Libertad</option>
+                                                                    <option value="14">Lambayeque</option>
+                                                                    <option value="15">Lima</option>
+                                                                    <option value="20">Piura</option>
+                                                            </select>
+                        </section>
+                        <section class="  col-md-6">
+                            <label>Provincia</label>
+                                <input type="text" class="form-control" name="provincia">
+                            </select>
+                        </section>
+
+                        <section class="  col-md-6">
+                            <label>Distrito</label>
+                            <input type="text" class="form-control" name="districto">
+                                
+                            </select>
+                        </section>
+
+                        <section class="  col-md-12">
+                            <label>Dirección</label>
+                            <input type="text" class="form-control" name="direccion">
+                        </section>
+
+                        <section class="  col-md-6">
+                            <label>Correo del usuario</label>
+                            <input type="email" class="form-control" name="email" maxlength="100">
+                        </section>
+
+                        <section class=" col-md-6">
+                            <label>Teléfono (móvil o fijo)</label>
+                            <input type="text" class="form-control" name="phone" maxlength="9">
+                        </section>
+
+    
+                        <section  class="hidden-element data-type-reclamo data-type-queja data-category-atencion data-category-producto   col-md-12">
+                            <label>Tipo de Queja</label>
+                            <select name="problem" class="form-control">
+                                <option selected="" disabled="" value="" style="display: none;">Seleccione una opción</option>
+                                <option value="75" data-type="2" >No llegó respuesta</option>
+                                <option value="76" data-type="2" >Negativa de recibir reclamo o recurso de apelación/queja</option>
+                                <option value="77" data-type="2">Requerimiento de pago con reclamo en curso</option>
+                                <option value="78" data-type="2">Suspensión servicio con reclamo en curso</option>
+                                <option value="79" data-type="2">Otros defectos en la tramitación de la queja</option>
+                                <option value="80" data-type="2">Demora en aplicar la resolución ya emitida</option>
+                                <option value="81" data-type="2">Negativa en entregar número de identificación del reclamo o
+                                    recurso de apelación/queja</option>
+                            </select>
+                            <section class=" textarea col-md-12">
+                                <label>Detalle del inconveniente  </label>
+                                <textarea name="detail" rows="7" maxlength="5000" class="form-control" placeholder="Indícanos cuál es su malestar/inconveniente"></textarea>
+                            </section>
+                        </section>
+                        <section class="  text-center col-md-12">
+                            <input type="hidden" name="category" value="servicio">
+                            <input type="hidden" name="type" value="reclamo">
+                            <button id="enviar" type="button" class="m-4 bg-primary px-5 ">ENVIAR</button>
+                        </section>   
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
